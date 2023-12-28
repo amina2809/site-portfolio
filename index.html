@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600;700&family=Manrope:wght@500;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header-page">
+		<div class="header-page__div" id="headerPage">
+			<script>
+				window.addEventListener('scroll', function () {
+					var header = document.getElementById('headerPage');
+					var scrollPosition = window.scrollY;
+					var changeColorPosition = 100;
+					var blackColor = '#202020';
+					var transparentColor = 'transparent';
+					if (scrollPosition > changeColorPosition) {
+						header.style.backgroundColor = blackColor;
+					} else {
+						header.style.backgroundColor = transparentColor;
+					}
+				});
+			</script>
+			<section class="header-page__section section-menu container">
+				<a class="section-menu__link-logo" href="#">
+					<svg class="section-menu__logo" xmlns="http://www.w3.org/2000/svg" width="56" height="56"
+						viewBox="0 0 56 56" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M55.9979 27.9979C55.9979 27.9979 56.33 15.1319 48.5989 7.40097C40.8681 -0.329853 28.0021 0.00207581 28.0021 0.00207581C28.0021 0.00207581 28.0003 0.0683428 28 0.194187C28 0.141039 27.9995 0.0985203 27.9992 0.067124C27.9987 0.0241907 27.9979 0.00207581 27.9979 0.00207581C27.9979 0.00207581 15.1319 -0.329853 7.40097 7.40097C-0.329853 15.1319 0.00207581 27.9979 0.00207581 27.9979C0.00207581 27.9979 12.8682 28.3298 20.5989 20.5989C27.6653 13.5328 27.9956 2.17651 28 0.275957C28.0047 2.17651 28.335 13.5328 35.4011 20.5989C43.1319 28.3298 55.9979 27.9979 55.9979 27.9979ZM7.40097 48.5989C-0.329853 40.8681 0.00207581 28.0021 0.00207581 28.0021C0.00207581 28.0021 12.8682 27.6702 20.5989 35.4011C27.6653 42.4672 27.9956 53.8235 28 55.7241C28.0047 53.8235 28.335 42.4672 35.4011 35.4011C43.1319 27.6702 55.9979 28.0021 55.9979 28.0021C55.9979 28.0021 56.33 40.8681 48.5989 48.5989C40.8681 56.3298 28.0021 55.9979 28.0021 55.9979C28.0021 55.9979 28.0003 55.9316 28 55.8058C27.9997 55.9316 27.9979 55.9979 27.9979 55.9979C27.9979 55.9979 15.1319 56.3298 7.40097 48.5989Z"
+							fill="white" />
+					</svg>
+				</a>
+				<nav class="section-menu__nav">
+					<ul class="section-menu__list">
+						<li class="section-menu__item text text--white-bolt">
+							<a class="section-menu__link" href="#">
+								<svg class="section-menu__icon" xmlns="http://www.w3.org/2000/svg" width="17"
+									height="16" viewBox="0 0 17 16" fill="none">
+									<g clip-path="url(#clip0_2319_11)">
+										<path
+											d="M12.4999 6.04249C12.5 5.77433 12.4471 5.5088 12.3441 5.2612C12.2411 5.01361 12.0902 4.78883 11.8999 4.59982C11.5107 4.22839 10.9933 4.02116 10.4553 4.02116C9.91723 4.02116 9.39986 4.22839 9.0106 4.59982L1.09993 12.5125C0.738881 12.8996 0.542229 13.4118 0.551426 13.9411C0.560622 14.4704 0.774948 14.9755 1.14923 15.3499C1.52352 15.7242 2.02853 15.9387 2.55783 15.948C3.08713 15.9573 3.59937 15.7608 3.9866 15.3998L11.8999 7.48716C12.0905 7.29796 12.2416 7.07287 12.3446 6.8249C12.4476 6.57693 12.5004 6.311 12.4999 6.04249ZM3.04393 14.4585C2.90917 14.587 2.73012 14.6586 2.54393 14.6586C2.35775 14.6586 2.1787 14.587 2.04393 14.4585C1.91154 14.3258 1.8372 14.146 1.8372 13.9585C1.8372 13.771 1.91154 13.5912 2.04393 13.4585L7.22327 8.27849L8.2266 9.28183L3.04393 14.4585ZM10.9586 6.54382L9.1666 8.33649L8.1666 7.33316L9.95927 5.54116C10.0232 5.46815 10.1014 5.40905 10.1891 5.36751C10.2767 5.32597 10.372 5.30287 10.469 5.29965C10.566 5.29643 10.6626 5.31316 10.7528 5.3488C10.843 5.38443 10.925 5.43822 10.9936 5.50683C11.0622 5.57543 11.116 5.65739 11.1516 5.74763C11.1873 5.83787 11.204 5.93447 11.2008 6.03144C11.1976 6.12841 11.1745 6.22368 11.1329 6.31136C11.0914 6.39904 11.0323 6.47725 10.9593 6.54116L10.9586 6.54382ZM3.74193 1.90316L4.77527 1.60849L5.06993 0.575158C5.1174 0.409348 5.21757 0.263503 5.35529 0.159678C5.49301 0.0558534 5.6608 -0.000305176 5.83327 -0.000305176C6.00574 -0.000305176 6.17352 0.0558534 6.31124 0.159678C6.44896 0.263503 6.54913 0.409348 6.5966 0.575158L6.89127 1.60849L7.9246 1.90316C8.09041 1.95063 8.23626 2.0508 8.34008 2.18852C8.44391 2.32624 8.50006 2.49402 8.50006 2.66649C8.50006 2.83896 8.44391 3.00675 8.34008 3.14447C8.23626 3.28219 8.09041 3.38235 7.9246 3.42982L6.89127 3.72449L6.5966 4.75782C6.54913 4.92364 6.44896 5.06948 6.31124 5.1733C6.17352 5.27713 6.00574 5.33329 5.83327 5.33329C5.6608 5.33329 5.49301 5.27713 5.35529 5.1733C5.21757 5.06948 5.1174 4.92364 5.06993 4.75782L4.77527 3.72449L3.74193 3.42982C3.57612 3.38235 3.43028 3.28219 3.32645 3.14447C3.22263 3.00675 3.16647 2.83896 3.16647 2.66649C3.16647 2.49402 3.22263 2.32624 3.32645 2.18852C3.43028 2.0508 3.57612 1.95063 3.74193 1.90316ZM15.9246 11.4298L14.8913 11.7245L14.5966 12.7578C14.5491 12.9236 14.449 13.0695 14.3112 13.1733C14.1735 13.2771 14.0057 13.3333 13.8333 13.3333C13.6608 13.3333 13.493 13.2771 13.3553 13.1733C13.2176 13.0695 13.1174 12.9236 13.0699 12.7578L12.7753 11.7245L11.7419 11.4298C11.5761 11.3824 11.4303 11.2822 11.3265 11.1445C11.2226 11.0067 11.1665 10.839 11.1665 10.6665C11.1665 10.494 11.2226 10.3262 11.3265 10.1885C11.4303 10.0508 11.5761 9.95063 11.7419 9.90316L12.7753 9.60849L13.0699 8.57516C13.1174 8.40935 13.2176 8.2635 13.3553 8.15968C13.493 8.05585 13.6608 7.99969 13.8333 7.99969C14.0057 7.99969 14.1735 8.05585 14.3112 8.15968C14.449 8.2635 14.5491 8.40935 14.5966 8.57516L14.8913 9.60849L15.9246 9.90316C16.0904 9.95063 16.2363 10.0508 16.3401 10.1885C16.4439 10.3262 16.5001 10.494 16.5001 10.6665C16.5001 10.839 16.4439 11.0067 16.3401 11.1445C16.2363 11.2822 16.0904 11.3824 15.9246 11.4298ZM12.3366 1.66649L13.2406 1.40849L13.4999 0.503158C13.5421 0.359036 13.6299 0.232473 13.7501 0.142433C13.8703 0.0523942 14.0164 0.00372822 14.1666 0.00372822C14.3168 0.00372822 14.4629 0.0523942 14.5831 0.142433C14.7033 0.232473 14.7911 0.359036 14.8333 0.503158L15.0913 1.40716L15.9953 1.66516C16.1394 1.70737 16.266 1.79514 16.356 1.91533C16.446 2.03552 16.4947 2.18165 16.4947 2.33182C16.4947 2.482 16.446 2.62813 16.356 2.74832C16.266 2.86851 16.1394 2.95628 15.9953 2.99849L15.0913 3.25649L14.8333 4.16249C14.7911 4.30661 14.7033 4.43318 14.5831 4.52322C14.4629 4.61326 14.3168 4.66192 14.1666 4.66192C14.0164 4.66192 13.8703 4.61326 13.7501 4.52322C13.6299 4.43318 13.5421 4.30661 13.4999 4.16249L13.2419 3.25916L12.3366 2.99982C12.1925 2.95762 12.0659 2.86984 11.9759 2.74965C11.8858 2.62946 11.8372 2.48333 11.8372 2.33316C11.8372 2.18298 11.8858 2.03685 11.9759 1.91666C12.0659 1.79647 12.1925 1.7087 12.3366 1.66649Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2319_11">
+											<rect width="16" height="16" fill="white" transform="translate(0.5)" />
+										</clipPath>
+									</defs>
+								</svg>
+								Portfolio
+							</a>
+						</li>
+						<li class="section-menu__item text text--white-bolt">
+							<a class="section-menu__link" href="#">
+								<svg class="section-menu__icon" xmlns="http://www.w3.org/2000/svg" width="17"
+									height="16" viewBox="0 0 17 16" fill="none">
+									<g clip-path="url(#clip0_2319_6)">
+										<path
+											d="M11.8334 9.33332C11.8334 9.51013 11.7632 9.6797 11.6382 9.80472C11.5131 9.92975 11.3436 9.99998 11.1668 9.99998H5.83344C5.65662 9.99998 5.48706 9.92975 5.36203 9.80472C5.23701 9.6797 5.16677 9.51013 5.16677 9.33332C5.16677 9.15651 5.23701 8.98694 5.36203 8.86191C5.48706 8.73689 5.65662 8.66665 5.83344 8.66665H11.1668C11.3436 8.66665 11.5131 8.73689 11.6382 8.86191C11.7632 8.98694 11.8334 9.15651 11.8334 9.33332ZM9.16677 11.3333H5.83344C5.65662 11.3333 5.48706 11.4036 5.36203 11.5286C5.23701 11.6536 5.16677 11.8232 5.16677 12C5.16677 12.1768 5.23701 12.3464 5.36203 12.4714C5.48706 12.5964 5.65662 12.6667 5.83344 12.6667H9.16677C9.34358 12.6667 9.51315 12.5964 9.63817 12.4714C9.7632 12.3464 9.83344 12.1768 9.83344 12C9.83344 11.8232 9.7632 11.6536 9.63817 11.5286C9.51315 11.4036 9.34358 11.3333 9.16677 11.3333ZM15.1668 6.98998V12.6667C15.1657 13.5504 14.8142 14.3976 14.1893 15.0225C13.5644 15.6474 12.7172 15.9989 11.8334 16H5.16677C4.28304 15.9989 3.43581 15.6474 2.81091 15.0225C2.18602 14.3976 1.83449 13.5504 1.83344 12.6667V3.33332C1.83449 2.44959 2.18602 1.60236 2.81091 0.977465C3.43581 0.352573 4.28304 0.00104342 5.16677 -1.51518e-05H8.17677C8.78985 -0.0015931 9.39716 0.118377 9.96358 0.352958C10.53 0.587539 11.0443 0.932077 11.4768 1.36665L13.7994 3.69065C14.2343 4.12281 14.579 4.63696 14.8137 5.2033C15.0484 5.76965 15.1684 6.37693 15.1668 6.98998ZM10.5341 2.30932C10.3243 2.10609 10.0887 1.93127 9.83344 1.78932V4.66665C9.83344 4.84346 9.90367 5.01303 10.0287 5.13806C10.1537 5.26308 10.3233 5.33332 10.5001 5.33332H13.3774C13.2354 5.07811 13.0603 4.84275 12.8568 4.63332L10.5341 2.30932ZM13.8334 6.98998C13.8334 6.87998 13.8121 6.77465 13.8021 6.66665H10.5001C9.96967 6.66665 9.46096 6.45594 9.08589 6.08087C8.71082 5.70579 8.5001 5.19708 8.5001 4.66665V1.36465C8.3921 1.35465 8.2861 1.33332 8.17677 1.33332H5.16677C4.63634 1.33332 4.12763 1.54403 3.75255 1.9191C3.37748 2.29418 3.16677 2.80289 3.16677 3.33332V12.6667C3.16677 13.1971 3.37748 13.7058 3.75255 14.0809C4.12763 14.4559 4.63634 14.6667 5.16677 14.6667H11.8334C12.3639 14.6667 12.8726 14.4559 13.2476 14.0809C13.6227 13.7058 13.8334 13.1971 13.8334 12.6667V6.98998Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2319_6">
+											<rect width="16" height="16" fill="white" transform="translate(0.5)" />
+										</clipPath>
+									</defs>
+								</svg>
+								Resume
+							</a>
+						</li>
+						<li class="section-menu__item text text--white-bolt">
+							<a class="section-menu__link" href="#">
+								<svg class="section-menu__link" xmlns="http://www.w3.org/2000/svg" width="17"
+									height="16" viewBox="0 0 17 16" fill="none">
+									<g clip-path="url(#clip0_2319_16)">
+										<path
+											d="M16.1901 9.81699C16.052 9.64931 15.8749 9.51809 15.6743 9.43486C15.4736 9.35163 15.2556 9.31894 15.0394 9.33965C13.8779 9.43148 12.7504 9.77609 11.736 10.3493C10.7215 10.9226 9.84468 11.7106 9.16675 12.6583V9.27365C10.0978 9.11547 10.9429 8.6333 11.5529 7.91234C12.1628 7.19138 12.4983 6.27802 12.5001 5.33365C12.5001 3.47165 11.2048 1.89899 9.93742 0.60632C9.55318 0.230884 9.0373 0.0206909 8.50009 0.0206909C7.96288 0.0206909 7.44699 0.230884 7.06275 0.60632C5.79542 1.89899 4.50009 3.47165 4.50009 5.33365C4.50184 6.27802 4.83733 7.19138 5.44729 7.91234C6.05724 8.6333 6.90239 9.11547 7.83342 9.27365V12.6583C7.1555 11.7106 6.27863 10.9226 5.2642 10.3493C4.24978 9.77609 3.12232 9.43148 1.96075 9.33965C1.74455 9.31906 1.52659 9.35181 1.32598 9.43503C1.12537 9.51824 0.94823 9.6494 0.810087 9.81699C0.672829 9.97995 0.57726 10.1739 0.531617 10.382C0.485974 10.5901 0.491626 10.8062 0.548087 11.0117C1.90742 15.9037 8.22742 16.0003 8.49609 16.0003H8.50409C8.77075 16.0003 15.0934 15.9037 16.4528 11.0117C16.5089 10.8061 16.5143 10.5901 16.4686 10.382C16.4228 10.1739 16.3273 9.98001 16.1901 9.81699ZM5.83342 5.33365C5.83342 3.56432 8.04542 1.52099 8.05875 1.50965C7.81542 2.13365 6.29542 5.93365 7.83342 6.00032C8.01023 6.00032 8.1798 5.93008 8.30482 5.80506C8.42985 5.68003 8.50009 5.51046 8.50009 5.33365C8.55041 4.14794 8.83523 2.98396 9.33809 1.90899C10.2921 2.92899 11.1668 4.10299 11.1668 5.33365C11.1668 6.0409 10.8858 6.71917 10.3857 7.21927C9.88561 7.71937 9.20733 8.00032 8.50009 8.00032C7.79284 8.00032 7.11457 7.71937 6.61447 7.21927C6.11437 6.71917 5.83342 6.0409 5.83342 5.33365ZM1.83742 10.667C3.03858 10.7643 4.19276 11.1769 5.18332 11.8633C6.17388 12.5496 6.9657 13.4852 7.47875 14.5757C5.81409 14.345 2.63342 13.5337 1.83742 10.667ZM9.53009 14.5743C10.0473 13.487 10.8394 12.5534 11.8279 11.8659C12.8165 11.1784 13.9674 10.7608 15.1668 10.6543C14.3708 13.5223 11.1974 14.341 9.53009 14.5743Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2319_16">
+											<rect width="16" height="16" fill="white" transform="translate(0.5)" />
+										</clipPath>
+									</defs>
+								</svg>
+								Testimonials
+							</a>
+						</li>
+						<li class="section-menu__item text text--white-bolt">
+							<a class="section-menu__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+									fill="none">
+									<g clip-path="url(#clip0_2319_53)">
+										<path
+											d="M10.1665 4.66661C9.54545 4.65695 8.94595 4.89435 8.49987 5.32661C8.15691 5.00635 7.72687 4.79472 7.26388 4.71835C6.8009 4.64199 6.32567 4.7043 5.89803 4.89745C5.47039 5.09061 5.10945 5.40596 4.86065 5.80381C4.61186 6.20166 4.48633 6.66423 4.49987 7.13328C4.49987 9.30394 7.7492 11.6239 8.11987 11.8806C8.23147 11.958 8.36405 11.9995 8.49987 11.9995C8.63569 11.9995 8.76827 11.958 8.87987 11.8806C9.25054 11.6239 12.4999 9.30394 12.4999 7.13328C12.5164 6.49708 12.2801 5.88027 11.8427 5.41794C11.4054 4.95561 10.8027 4.68544 10.1665 4.66661ZM8.49987 10.5079C7.3392 9.62127 5.8332 8.13461 5.8332 7.13328C5.78254 5.79594 7.7752 5.53328 7.8332 6.96928V7.33328C7.8332 7.51009 7.90344 7.67966 8.02846 7.80468C8.15349 7.9297 8.32306 7.99994 8.49987 7.99994C8.67668 7.99994 8.84625 7.9297 8.97127 7.80468C9.0963 7.67966 9.16654 7.51009 9.16654 7.33328V6.96928C9.22454 5.53461 11.2172 5.79594 11.1665 7.13328C11.1665 8.13328 9.66054 9.62127 8.49987 10.5079ZM9.0572 0.0186075C7.91436 -0.0612538 6.76769 0.105275 5.69477 0.506929C4.62185 0.908582 3.64771 1.53599 2.83826 2.34671C2.02881 3.15743 1.40292 4.13254 1.00294 5.20608C0.602964 6.27963 0.438224 7.42655 0.519869 8.56927C0.813202 12.8053 4.55454 15.9999 9.22187 15.9999H13.1665C14.0503 15.9989 14.8975 15.6474 15.5224 15.0225C16.1473 14.3976 16.4988 13.5503 16.4999 12.6666V8.22661C16.5246 6.17162 15.7711 4.18333 14.3906 2.66089C13.0101 1.13844 11.1048 0.194518 9.0572 0.0186075ZM15.1665 12.6666C15.1665 13.197 14.9558 13.7058 14.5807 14.0808C14.2057 14.4559 13.697 14.6666 13.1665 14.6666H9.22187C5.1992 14.6666 2.09987 12.0666 1.84987 8.47727C1.78143 7.52461 1.91849 6.56836 2.25177 5.67328C2.58505 4.77819 3.10677 3.96517 3.7816 3.28926C4.45644 2.61335 5.26863 2.09034 6.16318 1.75563C7.05773 1.42093 8.01376 1.28235 8.96654 1.34927C10.6775 1.50063 12.2678 2.29388 13.4179 3.56964C14.568 4.84541 15.1928 6.50915 15.1665 8.22661V12.6666Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2319_53">
+											<rect width="16" height="16" fill="white" transform="translate(0.5)" />
+										</clipPath>
+									</defs>
+								</svg>
+								Contact
+							</a>
+						</li>
+					</ul>
+					<button class="section-menu__btn btn" type="button">
+						<svg class="btn__icon-menu" width="56" height="56" viewBox="0 0 56 56" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<rect x="1" y="1" width="54" height="54" rx="19" stroke="white" stroke-width="2" />
+							<g clip-path="url(#clip0_2816_63)">
+								<path
+									d="M20.6667 24H35.3333C35.5101 24 35.6797 23.9298 35.8047 23.8048C35.9298 23.6797 36 23.5102 36 23.3334C36 23.1565 35.9298 22.987 35.8047 22.8619C35.6797 22.7369 35.5101 22.6667 35.3333 22.6667H20.6667C20.4899 22.6667 20.3203 22.7369 20.1953 22.8619C20.0702 22.987 20 23.1565 20 23.3334C20 23.5102 20.0702 23.6797 20.1953 23.8048C20.3203 23.9298 20.4899 24 20.6667 24Z"
+									fill="white" />
+								<path
+									d="M35.3334 26H26C25.8232 26 25.6537 26.0702 25.5286 26.1953C25.4036 26.3203 25.3334 26.4899 25.3334 26.6667C25.3334 26.8435 25.4036 27.013 25.5286 27.1381C25.6537 27.2631 25.8232 27.3333 26 27.3333H35.3334C35.5102 27.3333 35.6798 27.2631 35.8048 27.1381C35.9298 27.013 36 26.8435 36 26.6667C36 26.4899 35.9298 26.3203 35.8048 26.1953C35.6798 26.0702 35.5102 26 35.3334 26Z"
+									fill="white" />
+								<path
+									d="M35.3334 32.6667H26C25.8232 32.6667 25.6537 32.7369 25.5286 32.8619C25.4036 32.9869 25.3334 33.1565 25.3334 33.3333C25.3334 33.5101 25.4036 33.6797 25.5286 33.8047C25.6537 33.9298 25.8232 34 26 34H35.3334C35.5102 34 35.6798 33.9298 35.8048 33.8047C35.9298 33.6797 36 33.5101 36 33.3333C36 33.1565 35.9298 32.9869 35.8048 32.8619C35.6798 32.7369 35.5102 32.6667 35.3334 32.6667Z"
+									fill="white" />
+								<path
+									d="M35.3333 29.3333H20.6667C20.4899 29.3333 20.3203 29.4036 20.1953 29.5286C20.0702 29.6536 20 29.8232 20 30C20 30.1768 20.0702 30.3464 20.1953 30.4714C20.3203 30.5964 20.4899 30.6667 20.6667 30.6667H35.3333C35.5101 30.6667 35.6797 30.5964 35.8047 30.4714C35.9298 30.3464 36 30.1768 36 30C36 29.8232 35.9298 29.6536 35.8047 29.5286C35.6797 29.4036 35.5101 29.3333 35.3333 29.3333Z"
+									fill="white" />
+							</g>
+							<defs>
+								<clipPath id="clip0_2816_63">
+									<rect width="16" height="16" fill="white" transform="translate(20 20)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+				</nav>
+			</section>
+		</div>
+		<div class="header-page__div-title container">
+			<h1 class="header-page__title title">Unleash Creativity Through Minimalism.</h1>
+		</div>
+	</header>
+	<main class="main-page">
+		<section class="main-page__section-introduction section-introduction page--color-charcoal">
+			<div class="section-introduction__div-introduce container">
+				<h3 class="section-introduction__title subtitle subtitle--size-l subtitle--color-yellow">Meet Alex
+					Johnsson</h3>
+				<p class="section-introduction__text text text--white-normal">Lorem ipsum dolor sit amet,
+					consectetur
+					adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna.
+				</p>
+				<ul class="section-introduction__statistics">
+					<li class="section-introduction__item">
+						<h4 class="section-introduction__number subtitle subtitle--color-white">39</h4>
+						<p class="section-introduction__category text--white-bolt">
+							Happy Clients</p>
+					</li>
+					<li class="section-introduction__item">
+						<h4 class="section-introduction__number subtitle subtitle--color-white">50</h4>
+						<p class="section-introduction__category text--white-bolt">
+							Sleek Projects</p>
+					</li>
+					<li class="section-introduction__item">
+						<h4 class="section-introduction__number subtitle subtitle--color-white">24</h4>
+						<p class="section-introduction__category text--white-bolt">
+							App Designs</p>
+					</li>
+				</ul>
+			</div>
+			<div class="main-page__div-ellipse">
+				<picture>
+					<source srcset="./images/ellipse-large.png" media="(min-width: 1200px)" type="image/jpeg">
+					<source srcset="./images/ellipse-medium.png" media="(min-width: 768px)" type="image/jpeg">
+					<img class="main-page__ellipse" src="./images/ellipse-small.png" alt="ellipse" width="116"
+						height="345">
+				</picture>
+			</div>
+		</section>
+
+		<section class="mobile__section page--color-dark-gray">
+			<ul class="mobile__list container">
+				<li class="mobile__item mobile__item--banking-project">
+					<a class="mobile__link" href="#">
+						<img class="mobile__img mobile__img--banking-project" src="./images/phone.png"
+							alt="Banking Mobile App">
+						<div class="mobile__div-icon-arrow">
+							<svg class="mobile__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+								viewBox="0 0 34 34" fill="none">
+								<g clip-path="url(#clip0_7_71)">
+									<path
+										d="M16.8221 8.63377C16.8229 8.89796 16.9282 9.1511 17.115 9.3379C17.3018 9.52471 17.555 9.63001 17.8191 9.63079L22.9245 9.60251L8.48532 24.0416C8.29778 24.2292 8.19242 24.4835 8.19242 24.7488C8.19242 25.014 8.29778 25.2683 8.48531 25.4559C8.67285 25.6434 8.9272 25.7488 9.19242 25.7488C9.45764 25.7488 9.71199 25.6434 9.89953 25.4559L24.3316 11.0238L24.3316 16.1432C24.3311 16.2753 24.3567 16.4061 24.4069 16.5281C24.4572 16.6502 24.5311 16.7611 24.6245 16.8545C24.7178 16.9478 24.8287 17.0217 24.9508 17.072C25.0729 17.1223 25.2037 17.1479 25.3357 17.1473C25.5999 17.1466 25.853 17.0413 26.0398 16.8544C26.2266 16.6676 26.3319 16.4145 26.3327 16.1503L26.3398 10.6137C26.3393 9.81866 26.0233 9.05636 25.4611 8.49421C24.8989 7.93206 24.1366 7.61603 23.3416 7.61553L17.8191 7.63675C17.555 7.63754 17.3018 7.74283 17.115 7.92964C16.9282 8.11645 16.8229 8.36959 16.8221 8.63377Z"
+										fill="#374957" />
+								</g>
+								<defs>
+									<clipPath id="clip0_7_71">
+										<rect width="24" height="24" fill="white"
+											transform="translate(16.9706) rotate(45)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="mobile__wrap-text">
+							<h3 class="mobile__title tagline">Project: Banking Mobile App
+							</h3>
+							<p class="mobile__text text  text--black-bolt">Lorem ipsum dolor sit amet,
+								consectetur
+								adipiscing elit,
+								sed do
+								eiusmod tempor incididunt
+								ut labore et dolore magna.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mobile__item  mobile__item--banking-mobile mobile__item--disappear-line">
+					<a class="mobile__link" href="#">
+						<img class="mobile__img mobile__img--size" src="./images/arrow.jpg" alt="Line">
+						<div class="mobile__div-icon-arrow">
+							<svg class="mobile__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+								viewBox="0 0 34 34" fill="none">
+								<g clip-path="url(#clip0_7_71)">
+									<path
+										d="M16.8221 8.63377C16.8229 8.89796 16.9282 9.1511 17.115 9.3379C17.3018 9.52471 17.555 9.63001 17.8191 9.63079L22.9245 9.60251L8.48532 24.0416C8.29778 24.2292 8.19242 24.4835 8.19242 24.7488C8.19242 25.014 8.29778 25.2683 8.48531 25.4559C8.67285 25.6434 8.9272 25.7488 9.19242 25.7488C9.45764 25.7488 9.71199 25.6434 9.89953 25.4559L24.3316 11.0238L24.3316 16.1432C24.3311 16.2753 24.3567 16.4061 24.4069 16.5281C24.4572 16.6502 24.5311 16.7611 24.6245 16.8545C24.7178 16.9478 24.8287 17.0217 24.9508 17.072C25.0729 17.1223 25.2037 17.1479 25.3357 17.1473C25.5999 17.1466 25.853 17.0413 26.0398 16.8544C26.2266 16.6676 26.3319 16.4145 26.3327 16.1503L26.3398 10.6137C26.3393 9.81866 26.0233 9.05636 25.4611 8.49421C24.8989 7.93206 24.1366 7.61603 23.3416 7.61553L17.8191 7.63675C17.555 7.63754 17.3018 7.74283 17.115 7.92964C16.9282 8.11645 16.8229 8.36959 16.8221 8.63377Z"
+										fill="#374957" />
+								</g>
+								<defs>
+									<clipPath id="clip0_7_71">
+										<rect width="24" height="24" fill="white"
+											transform="translate(16.9706) rotate(45)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="mobile__wrap-text">
+							<h3 class="mobile__title subtitle__text">Banking Mobile App</h3>
+							<p class="mobile__text text text--black-normal">Lorem ipsum dolor sit
+								amet, consectetur
+								adipiscing
+								elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						</div>
+					</a>
+				</li>
+
+				<li class="mobile__item  mobile__item--banking-mobile">
+					<a class="mobile__link" href="#">
+						<img class="mobile__img mobile__img--size" src="./images/wall.jpg" alt="Wall">
+						<div class="mobile__div-icon-arrow">
+							<svg class="mobile__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+								viewBox="0 0 34 34" fill="none">
+								<g clip-path="url(#clip0_7_71)">
+									<path
+										d="M16.8221 8.63377C16.8229 8.89796 16.9282 9.1511 17.115 9.3379C17.3018 9.52471 17.555 9.63001 17.8191 9.63079L22.9245 9.60251L8.48532 24.0416C8.29778 24.2292 8.19242 24.4835 8.19242 24.7488C8.19242 25.014 8.29778 25.2683 8.48531 25.4559C8.67285 25.6434 8.9272 25.7488 9.19242 25.7488C9.45764 25.7488 9.71199 25.6434 9.89953 25.4559L24.3316 11.0238L24.3316 16.1432C24.3311 16.2753 24.3567 16.4061 24.4069 16.5281C24.4572 16.6502 24.5311 16.7611 24.6245 16.8545C24.7178 16.9478 24.8287 17.0217 24.9508 17.072C25.0729 17.1223 25.2037 17.1479 25.3357 17.1473C25.5999 17.1466 25.853 17.0413 26.0398 16.8544C26.2266 16.6676 26.3319 16.4145 26.3327 16.1503L26.3398 10.6137C26.3393 9.81866 26.0233 9.05636 25.4611 8.49421C24.8989 7.93206 24.1366 7.61603 23.3416 7.61553L17.8191 7.63675C17.555 7.63754 17.3018 7.74283 17.115 7.92964C16.9282 8.11645 16.8229 8.36959 16.8221 8.63377Z"
+										fill="#374957" />
+								</g>
+								<defs>
+									<clipPath id="clip0_7_71">
+										<rect width="24" height="24" fill="white"
+											transform="translate(16.9706) rotate(45)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="mobile__wrap-text">
+							<h3 class="mobile__title subtitle__text">Save Planet Mobile app
+							</h3>
+							<p class="mobile__text text text--black-normal">Lorem ipsum dolor sit
+								amet, consectetur
+								adipiscing
+								elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mobile__item  mobile__item--banking-mobile mobile__item--disappear-planet">
+					<a class="mobile__link" href="#">
+						<img class="mobile__img mobile__img--size" src="./images/planet.jpg" alt="Planet">
+						<div class="mobile__div-icon-arrow">
+							<svg class="mobile__icon-arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+								viewBox="0 0 34 34" fill="none">
+								<g clip-path="url(#clip0_7_71)">
+									<path
+										d="M16.8221 8.63377C16.8229 8.89796 16.9282 9.1511 17.115 9.3379C17.3018 9.52471 17.555 9.63001 17.8191 9.63079L22.9245 9.60251L8.48532 24.0416C8.29778 24.2292 8.19242 24.4835 8.19242 24.7488C8.19242 25.014 8.29778 25.2683 8.48531 25.4559C8.67285 25.6434 8.9272 25.7488 9.19242 25.7488C9.45764 25.7488 9.71199 25.6434 9.89953 25.4559L24.3316 11.0238L24.3316 16.1432C24.3311 16.2753 24.3567 16.4061 24.4069 16.5281C24.4572 16.6502 24.5311 16.7611 24.6245 16.8545C24.7178 16.9478 24.8287 17.0217 24.9508 17.072C25.0729 17.1223 25.2037 17.1479 25.3357 17.1473C25.5999 17.1466 25.853 17.0413 26.0398 16.8544C26.2266 16.6676 26.3319 16.4145 26.3327 16.1503L26.3398 10.6137C26.3393 9.81866 26.0233 9.05636 25.4611 8.49421C24.8989 7.93206 24.1366 7.61603 23.3416 7.61553L17.8191 7.63675C17.555 7.63754 17.3018 7.74283 17.115 7.92964C16.9282 8.11645 16.8229 8.36959 16.8221 8.63377Z"
+										fill="#374957" />
+								</g>
+								<defs>
+									<clipPath id="clip0_7_71">
+										<rect width="24" height="24" fill="white"
+											transform="translate(16.9706) rotate(45)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="mobile__wrap-text">
+							<h3 class="mobile__title subtitle__text">Banking Mobile App
+							</h3>
+							<p class="mobile__text text text--color-black">Lorem ipsum dolor sit
+								amet, consectetur
+								adipiscing
+								elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="design__section page--color-charcoal">
+			<h2 class="design__title title title--size-s container">Graphics Design</h2>
+			<ul class="design__list container">
+				<li class="design__item design__item--newspaper">
+					<a class="design__link" href="#">
+						<img class="design__img design__img--newspaper" src="./images/newspaper.png" alt="Newspaper">
+					</a>
+				</li>
+				<li class="design__item design__item--cicle">
+					<a class="design__link" href="#">
+						<img class="design__img design__img--size-s" src="./images/circle.png" alt="Cicle">
+					</a>
+				</li>
+				<li class="design__item design__item--droom">
+					<a class="design__link" href="#">
+						<img class="design__img design__img--size-s" src="./images/drom.png" alt="Droom">
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+		<section class="main-page__quotation quotation-section">
+			<div class="quotation-section__slogan page--color-dark">
+				<h3 class="quotation-section__title subtitle subtitle--size-m subtitle--color-white container">“Good
+					design is
+					like a
+					refrigerator - when it works, no one notices, but when it doesn't, it sure stinks.”</h3>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer-page page--color-charcoal">
+		<section class="footer-page__section container">
+			<a class="footer-page__link" href="#">
+				<div class="footer-page__div-icon-dawn">
+					<svg class="footer-page__icon-dawn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108"
+						fill="none">
+						<path
+							d="M54 0L54.0105 53.9469L74.665 4.11049L54.03 53.9551L92.1837 15.8163L54.0449 53.97L103.889 33.335L54.0531 53.9895L108 54L54.0531 54.0105L103.889 74.665L54.0449 54.03L92.1837 92.1837L54.03 54.0449L74.665 103.889L54.0105 54.0531L54 108L53.9895 54.0531L33.335 103.889L53.97 54.0449L15.8163 92.1837L53.9551 54.03L4.11049 74.665L53.9469 54.0105L0 54L53.9469 53.9895L4.11049 33.335L53.9551 53.97L15.8163 15.8163L53.97 53.9551L33.335 4.11049L53.9895 53.9469L54 0Z"
+							stroke="white" stroke-width="4" />
+					</svg>
+					<div class="footer-page__div-wrap">
+						<h3 class="footer-page__title subtitle subtitle--color-white">Have a new project?</h3>
+						<p class="footer-page__desc">Book a call now
+							<svg xmlns="http://www.w3.org/2000/svg" width="57" height="29" viewBox="0 0 57 29"
+								fill="none">
+								<path d="M1 14.5L54 14.5" stroke="white" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M43 1.5L56 14.5L43 27.5" stroke="white" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</p>
+					</div>
+				</div>
+			</a>
+			<div class="footer-page__icons-wrap">
+				<div class="footer-page__div-icons">
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="none">
+							<path d="M11 11V7M16 11V7M21 2H3V18H8V22L12 18H17L21 14V2Z" stroke="white" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="none">
+							<path
+								d="M23 2.9998C22.0424 3.67528 20.9821 4.19191 19.86 4.5298C19.2577 3.83731 18.4573 3.34649 17.567 3.12373C16.6767 2.90096 15.7395 2.957 14.8821 3.28426C14.0247 3.61151 13.2884 4.1942 12.773 4.95352C12.2575 5.71283 11.9877 6.61214 12 7.5298V8.5298C10.2426 8.57537 8.50127 8.18561 6.93101 7.39525C5.36074 6.60488 4.01032 5.43844 3 3.9998C3 3.9998 -1 12.9998 8 16.9998C5.94053 18.3978 3.48716 19.0987 1 18.9998C10 23.9998 21 18.9998 21 7.4998C20.9991 7.22126 20.9723 6.9434 20.92 6.6698C21.9406 5.6633 22.6608 4.39251 23 2.9998Z"
+								stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="none">
+							<path
+								d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+								stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M16 11.3698C16.1234 12.2021 15.9813 13.052 15.5938 13.7988C15.2063 14.5456 14.5931 15.1512 13.8416 15.5295C13.0901 15.9077 12.2384 16.0394 11.4078 15.9057C10.5771 15.7721 9.80976 15.3799 9.21484 14.785C8.61991 14.1901 8.22773 13.4227 8.09406 12.592C7.9604 11.7614 8.09206 10.9097 8.47032 10.1582C8.84858 9.40667 9.45418 8.79355 10.201 8.40605C10.9478 8.01856 11.7978 7.8764 12.63 7.99981C13.4789 8.1257 14.2648 8.52128 14.8717 9.12812C15.4785 9.73496 15.8741 10.5209 16 11.3698Z"
+								stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="none">
+							<path
+								d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+								stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M6 9H2V21H6V9Z" stroke="white" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+								stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+				</div>
+				<p class="footer__text  text text--white-normal">Copyright © 2023 Syeda Urooj</p>
+			</div>
+		</section>
+
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
